@@ -17,3 +17,15 @@ C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automati
 C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automation\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\nunit.framework.xml
 C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automation\InfoTycoon.Fwk.Crosscutting.Thirdparty\obj\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.dll
 C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automation\InfoTycoon.Fwk.Crosscutting.Thirdparty\obj\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.dll.config
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\obj\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\obj\Debug\InfoTycoon.Fwk.Crosscutting.Thirdparty.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\nunit.framework.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\TechTalk.SpecFlow.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\WebDriver.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\WebDriver.Support.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\nunit.framework.xml
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\WebDriver.xml
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Fwk.Crosscutting.Thirdparty\bin\Debug\WebDriver.Support.xml

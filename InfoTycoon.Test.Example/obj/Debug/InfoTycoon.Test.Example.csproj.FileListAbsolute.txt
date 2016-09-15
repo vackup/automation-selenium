@@ -37,3 +37,24 @@ C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automati
 C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automation\InfoTycoon.Test.Example\obj\Debug\InfoTycoon.Test.Example.pdb
 C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automation\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Fwk.TestAutomation.dll
 C:\Users\gviruega\Documents\Visual Studio 2015\Projects\InfoTycoon.Test Automation\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Fwk.TestAutomation.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\obj\Debug\InfoTycoon.Test.Example.csprojResolveAssemblyReference.cache
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\Drivers\chromedriver.exe
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\Drivers\IEDriverServer.exe
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Test.Example.dll.config
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Test.Example.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Test.Example.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Fwk.TestAutomation.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.ProjectToTest.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\nunit.framework.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\TechTalk.SpecFlow.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\WebDriver.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\WebDriver.Support.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\System.Web.Razor.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.Fwk.TestAutomation.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\InfoTycoon.ProjectToTest.pdb
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\nunit.framework.xml
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\WebDriver.xml
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\WebDriver.Support.xml
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\bin\Debug\System.Web.Razor.xml
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\obj\Debug\InfoTycoon.Test.Example.dll
+C:\Projects\Infotycoon\automation-selenium\InfoTycoon.Test.Example\obj\Debug\InfoTycoon.Test.Example.pdb

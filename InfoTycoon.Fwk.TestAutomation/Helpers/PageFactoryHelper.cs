@@ -12,7 +12,7 @@ namespace InfoTycoon.Fwk.TestAutomation.Helpers
         public static T InitElements<T>() where T : PageBase, new()
         {
             T page = new T();
-            //Browser.Initializes(true);
+            page.Initializes();
             PageFactory.InitElements(Browser.Driver, page);
             return page;
         }

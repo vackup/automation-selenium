@@ -1,0 +1,15 @@
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\Drivers\chromedriver.exe
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\Drivers\IEDriverServer.exe
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\Neoris.Fwk.AutomationTest.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\Neoris.Fwk.AutomationTest.pdb
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\RazorEngine.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\RelevantCodes.ExtentReports.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\WebDriver.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\WebDriver.Support.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\obj\Debug\Neoris.Fwk.TestAutomation.csprojResolveAssemblyReference.cache
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\obj\Debug\Neoris.Fwk.AutomationTest.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\obj\Debug\Neoris.Fwk.AutomationTest.pdb
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\Neoris.Fwk.AutomationTest.dll.config
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\nunit.framework.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.TestAutomation\bin\Debug\nunit.framework.xml

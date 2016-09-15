@@ -1,0 +1,9 @@
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\bin\Debug\Neoris.Fwk.Crosscutting.Thirdparty.dll.config
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\bin\Debug\Neoris.Fwk.Crosscutting.Thirdparty.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\bin\Debug\Neoris.Fwk.Crosscutting.Thirdparty.pdb
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\obj\Debug\Neoris.Fwk.Crosscutting.Thirdparty.csprojResolveAssemblyReference.cache
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\obj\Debug\Neoris.Fwk.Crosscutting.Thirdparty.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\obj\Debug\Neoris.Fwk.Crosscutting.Thirdparty.pdb
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\bin\Debug\nunit.framework.dll
+C:\Users\gustavo.viruega\Desktop\Back Up\Testing\Testing Automatizado\Selenium 2\Projects\Neoris.Test Automation\Neoris.Fwk.Crosscutting.Thirdparty\bin\Debug\nunit.framework.xml

@@ -42,6 +42,7 @@ namespace InfoTycoon.Test.Example._01.Login
         public void Initialize()
         {
             Pages.Login.Initializes();
+            //TEST COMMENT FOR GITHUB
             //PageBase.Initializes();
             //PageBase.Initializes(maximized);
             //Browser.Initializes(maximized);

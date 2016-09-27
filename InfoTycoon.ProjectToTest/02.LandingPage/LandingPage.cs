@@ -14,7 +14,7 @@ namespace InfoTycoon.ProjectToTest
         }
 
         #region Objects
-        [FindsBy(How = How.ClassName, Using = "ng-binding")]
+        [FindsBy(How = How.XPath, Using = "//*[@id='profile']")]
         private IWebElement lblName;
 
         [FindsBy(How = How.ClassName, Using = "content-header")]

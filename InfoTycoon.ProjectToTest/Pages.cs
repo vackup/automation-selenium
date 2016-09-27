@@ -6,14 +6,31 @@ namespace InfoTycoon.ProjectToTest
 {
     public static class Pages
     {
+        private static Login _LoginPage;
+        private static LandingPage _LandingPage;
+
         public static Login Login
         {
-            get { return PageFactoryHelper.InitElements<Login>(); }
+            get
+            {
+                if (_LoginPage == null)
+                {
+                    _LoginPage = PageFactoryHelper.InitElements<Login>();
+                }
+                return _LoginPage;
+            }
         }
 
         public static LandingPage LandingPage
         {
-            get { return PageFactoryHelper.InitElements<LandingPage>(); }
+            get
+            {
+                if (_LandingPage == null)
+                {
+                    return PageFactoryHelper.InitElements<LandingPage>();
+                }
+                return _LandingPage;
+            }
         }
 
         //public static Login Login

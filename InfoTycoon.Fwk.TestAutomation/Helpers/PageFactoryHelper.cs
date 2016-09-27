@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium;
 
 namespace InfoTycoon.Fwk.TestAutomation.Helpers
 {
@@ -12,7 +13,6 @@ namespace InfoTycoon.Fwk.TestAutomation.Helpers
         public static T InitElements<T>() where T : PageBase, new()
         {
             T page = new T();
-            page.Initializes();
             PageFactory.InitElements(Browser.Driver, page);
             return page;
         }

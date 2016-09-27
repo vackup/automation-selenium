@@ -6,18 +6,11 @@ namespace InfoTycoon.ProjectToTest
 {
     public static class Pages
     {
-        private static Login _LoginPage;
-        private static LandingPage _LandingPage;
-
-        public static Login Login
+        public static Login LoginPage
         {
             get
             {
-                if (_LoginPage == null)
-                {
-                    _LoginPage = PageFactoryHelper.InitElements<Login>();
-                }
-                return _LoginPage;
+                return PageFactoryHelper.InitElements<Login>();
             }
         }
 
@@ -25,22 +18,8 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
-                if (_LandingPage == null)
-                {
-                    return PageFactoryHelper.InitElements<LandingPage>();
-                }
-                return _LandingPage;
+                return PageFactoryHelper.InitElements<LandingPage>();
             }
         }
-
-        //public static Login Login
-        //{
-        //    get
-        //    {
-        //        var login = new Login();
-        //        PageFactory.InitElements(Browser.Driver, login);
-        //        return login;
-        //    }
-        //}
     }
 }

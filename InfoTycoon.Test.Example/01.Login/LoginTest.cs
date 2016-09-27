@@ -44,37 +44,43 @@ namespace InfoTycoon.Test.Example._01.Login
             //Pages.Login.Initializes();
             //PageBase.Initializes();
             //PageBase.Initializes(maximized);
-            //Browser.Initializes(maximized);
+            Browser.Initializes(true);
+
         }
 
         [TestMethod]
         public void UserLogin() 
         {
-            Pages.Login.GoTo();
-            Pages.Login.SingIn(name, pass);
+            var loginPage = Pages.LoginPage;
+            var landingPage = Pages.LandingPage;
+            loginPage.GoTo();
+            loginPage.SingIn(name, pass);
             Thread.Sleep(5000);
-            //Assert.AreEqual(fullname, Pages.LandingPage.LabelUserName);
-            //Pages.Login.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
+            Assert.AreEqual(fullname, landingPage.LabelUserName);
+            loginPage.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestMethod]
         public void LoginWrongUser()
         {
-            Pages.Login.GoTo();
-            Pages.Login.SingIn(wrongname, pass);
-            Assert.AreEqual(errortitle, Pages.Login.ErrorTitle);
-            Assert.AreEqual(errornamemsg, Pages.Login.ErrorMsg);
-            Pages.Login.PrintScreen("LoginWrongUser Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
+            var loginPage = Pages.LoginPage;
+
+            loginPage.GoTo();
+            loginPage.SingIn(wrongname, pass);
+            Assert.AreEqual(errortitle, loginPage.ErrorTitle);
+            Assert.AreEqual(errornamemsg, loginPage.ErrorMsg);
+            loginPage.PrintScreen("LoginWrongUser Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestMethod]
         public void LoginWrongPass()
         {
-            Pages.Login.GoTo();
-            Pages.Login.SingIn(name, wrongpass);
-            Assert.AreEqual(errortitle, Pages.Login.ErrorTitle);
-            Assert.AreEqual(errorpassmsg, Pages.Login.ErrorMsg);
-            Pages.Login.PrintScreen("LoginWrongPass Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
+            var loginPage = Pages.LoginPage;
+            loginPage.GoTo();
+            loginPage.SingIn(name, wrongpass);
+            Assert.AreEqual(errortitle, loginPage.ErrorTitle);
+            Assert.AreEqual(errorpassmsg, loginPage.ErrorMsg);
+            loginPage.PrintScreen("LoginWrongPass Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestCleanup]
@@ -82,7 +88,7 @@ namespace InfoTycoon.Test.Example._01.Login
         {
             //reportHelper.GenerateReport(TestContext);
             //Browser.Quit();
-            Pages.Login.Quit();
+            Pages.LoginPage.Quit();
         }
 
     }

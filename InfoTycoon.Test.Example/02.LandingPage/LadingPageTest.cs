@@ -32,14 +32,14 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         [TestInitialize]
         public void Initialize()
         {
-            Pages.Login.Initializes();
+            Pages.LoginPage.Initializes();
         }
 
         [TestMethod]
         public void LandingPageUI()
         {
-            Pages.Login.GoTo();
-            Pages.Login.SingIn(name, pass);
+            Pages.LoginPage.GoTo();
+            Pages.LoginPage.SingIn(name, pass);
             Thread.Sleep(5000);
             Assert.AreEqual(fullname, Pages.LandingPage.LabelUserName);
             Assert.AreEqual(header, Pages.LandingPage.PageHeader);
@@ -49,8 +49,8 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         [TestMethod]
         public void CreateNewPopUp()
         {
-            Pages.Login.GoTo();
-            Pages.Login.SingIn(name, pass);
+            Pages.LoginPage.GoTo();
+            Pages.LoginPage.SingIn(name, pass);
             //Thread.Sleep(5000);
             Pages.LandingPage.CreateNew();
             Thread.Sleep(5000);
@@ -62,7 +62,7 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         {
             //reportHelper.GenerateReport(TestContext);
             //Browser.Quit();
-            Pages.Login.Quit();
+            Pages.LoginPage.Quit();
         }
     }
 }

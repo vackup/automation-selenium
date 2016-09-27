@@ -12,7 +12,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace InfoTycoon.Fwk.TestAutomation
 {
-    internal static class Browser
+    public static class Browser
     {
         private const String INTERNET_EXPLORER_DRIVER = "internetexplorerdriver";
         private const String CHROME_DRIVER = "chromedriver";
@@ -20,9 +20,10 @@ namespace InfoTycoon.Fwk.TestAutomation
 
         private static IWebDriver webDriver { get; set; }
 
-        internal static void Initializes(bool maximized = true)
+        public static void Initializes(bool maximized = true)
         {
             webDriver = DriverHelper.FactoryDriver();
+
             if (maximized)
                 webDriver.Manage().Window.Maximize();
         }

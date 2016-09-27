@@ -55,7 +55,7 @@ namespace InfoTycoon.Test.Example._01.Login
             var landingPage = Pages.LandingPage;
             loginPage.GoTo();
             loginPage.SingIn(name, pass);
-            Thread.Sleep(5000);
+            loginPage.ExplicitWait(10);
             Assert.AreEqual(fullname, landingPage.LabelUserName);
             loginPage.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }

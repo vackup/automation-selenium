@@ -22,7 +22,9 @@ namespace InfoTycoon.Fwk.TestAutomation
 
         internal static void Initializes(bool maximized = true)
         {
+            if (webDriver == null)
             webDriver = DriverHelper.FactoryDriver();
+
             if (maximized)
                 webDriver.Manage().Window.Maximize();
         }
@@ -84,10 +86,11 @@ namespace InfoTycoon.Fwk.TestAutomation
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(sec));
         }
 
-        //public static void ExplicitWait(int sec)
-        //{
-        //    WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(sec));
-        //    wait.Until(ExpectedConditions.ElementExists(By.LinkText("Create New")));
+        public static void ExplicitWait(int sec)
+        {
+            WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(sec));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("profile")));
+        }
 
         //ESTO NO VAAAAA
         //    //new WebDriverWait(webDriver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.LinkText("Create New")));

@@ -42,5 +42,15 @@ namespace InfoTycoon.ProjectToTest
         //        return login;
         //    }
         //}
+
+        //public static LandingPage LandingPage
+        //{
+        //    get
+        //    {
+        //        var landingpage = new LandingPage();
+        //        PageFactory.InitElements(Browser.Driver, landingpage);
+        //        return landingpage;
+        //    }
+        //}
     }
 }

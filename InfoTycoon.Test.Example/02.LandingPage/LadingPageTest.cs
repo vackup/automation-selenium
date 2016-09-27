@@ -32,7 +32,7 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         [TestInitialize]
         public void Initialize()
         {
-            Pages.Login.Initializes();
+            //Pages.Login.Initializes();
         }
 
         [TestMethod]
@@ -51,7 +51,7 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         {
             Pages.Login.GoTo();
             Pages.Login.SingIn(name, pass);
-            //Thread.Sleep(5000);
+            Thread.Sleep(10000);
             Pages.LandingPage.CreateNew();
             Thread.Sleep(5000);
             Assert.AreEqual(createmodalheader, Pages.LandingPage.ModalHeader);
@@ -62,7 +62,7 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         {
             //reportHelper.GenerateReport(TestContext);
             //Browser.Quit();
-            Pages.Login.Quit();
+            Pages.LandingPage.Quit();
         }
     }
 }

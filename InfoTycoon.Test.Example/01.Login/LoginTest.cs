@@ -52,9 +52,9 @@ namespace InfoTycoon.Test.Example._01.Login
         {
             Pages.Login.GoTo();
             Pages.Login.SingIn(name, pass);
-            Thread.Sleep(5000);
-            //Assert.AreEqual(fullname, Pages.LandingPage.LabelUserName);
-            //Pages.Login.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
+            Pages.Login.ExplicitWait(10);
+            Assert.AreEqual(fullname, Pages.LandingPage.LabelUserName);
+            Pages.Login.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestMethod]

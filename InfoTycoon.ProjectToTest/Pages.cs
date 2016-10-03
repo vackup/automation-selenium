@@ -6,7 +6,7 @@ namespace InfoTycoon.ProjectToTest
 {
     public static class Pages
     {
-        public static Login LoginPage
+        public static Login Login
         {
             get
             {

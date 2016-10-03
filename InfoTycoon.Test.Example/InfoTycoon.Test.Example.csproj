@@ -85,7 +85,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="01.Login\LoginTest.cs" />
-    <Compile Include="02.LandingPage\LadingPageTest.cs" />
+    <Compile Include="02.LandingPage\LandingPageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

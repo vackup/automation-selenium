@@ -41,29 +41,25 @@ namespace InfoTycoon.Test.Example._01.Login
         [TestInitialize]
         public void Initialize()
         {
-            //Pages.Login.Initializes();
-            //PageBase.Initializes();
-            //PageBase.Initializes(maximized);
             Browser.Initializes(true);
-
         }
 
         [TestMethod]
         public void UserLogin() 
         {
-            var loginPage = Pages.LoginPage;
+            var loginPage = Pages.Login;
             var landingPage = Pages.LandingPage;
+
             loginPage.GoTo();
             loginPage.SingIn(name, pass);
-            loginPage.ExplicitWait(10);
             Assert.AreEqual(fullname, landingPage.LabelUserName);
-            loginPage.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
+            landingPage.PrintScreen("UserLogin Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestMethod]
         public void LoginWrongUser()
         {
-            var loginPage = Pages.LoginPage;
+            var loginPage = Pages.Login;
 
             loginPage.GoTo();
             loginPage.SingIn(wrongname, pass);
@@ -75,7 +71,8 @@ namespace InfoTycoon.Test.Example._01.Login
         [TestMethod]
         public void LoginWrongPass()
         {
-            var loginPage = Pages.LoginPage;
+            var loginPage = Pages.Login;
+
             loginPage.GoTo();
             loginPage.SingIn(name, wrongpass);
             Assert.AreEqual(errortitle, loginPage.ErrorTitle);
@@ -87,8 +84,7 @@ namespace InfoTycoon.Test.Example._01.Login
         public void CleanUp()
         {
             //reportHelper.GenerateReport(TestContext);
-            //Browser.Quit();
-            Pages.LoginPage.Quit();
+            Browser.Quit();
         }
 
     }

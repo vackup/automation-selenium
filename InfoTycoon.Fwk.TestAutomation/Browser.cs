@@ -9,6 +9,7 @@ using System.Drawing.Imaging;
 using System.Configuration;
 using System.IO;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Support.PageObjects;
 
 namespace InfoTycoon.Fwk.TestAutomation
 {
@@ -42,7 +43,7 @@ namespace InfoTycoon.Fwk.TestAutomation
             webDriver.Url = url;
         }
 
-        internal static void PrintScreen(string fileName, ImageFormat imageFormat, string path = null)
+        public static void PrintScreen(string fileName, ImageFormat imageFormat, string path = null)
         {
             if (String.IsNullOrEmpty(path))
                 path = ConfigurationManager.AppSettings["DefaultImagePath"];
@@ -54,7 +55,7 @@ namespace InfoTycoon.Fwk.TestAutomation
             ss.SaveAsFile(file, imageFormat);
         }
 
-        internal static void Quit()
+        public static void Quit()
         {
             webDriver.Quit();
             KillDriverProcesses();
@@ -81,22 +82,16 @@ namespace InfoTycoon.Fwk.TestAutomation
             }
         }
 
-        internal static void ImplicitlyWait(int sec)
+        public static void ImplicitlyWait(int sec)
         {
             webDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(sec));
         }
 
-        public static void ExplicitWait(int sec)
+        public static void ExplicitWait(int sec, IWebElement element)
         {
             WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(sec));
-            wait.Until(ExpectedConditions.ElementIsVisible(By.Id("profile")));
+            wait.Until((webDriver => element.Displayed && element.Enabled));
+            //wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//*[@class='btn btn-primary'][1]")));
         }
-
-        //ESTO NO VAAAAA
-        //    //new WebDriverWait(webDriver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.LinkText("Create New")));
-        //    //wait.
-        //    //waitforElementPresent
-        //ESTO NO VAAAAA
-        //}
     }
 }

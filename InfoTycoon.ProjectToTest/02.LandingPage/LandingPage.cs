@@ -14,7 +14,7 @@ namespace InfoTycoon.ProjectToTest
         }
 
         #region Objects
-        [FindsBy(How = How.Id, Using = "profile")]
+        [FindsBy(How = How.XPath, Using = "//*[@id='profile']/h5")]
         private IWebElement lblName;
 
         [FindsBy(How = How.ClassName, Using = "content-header")]
@@ -25,13 +25,15 @@ namespace InfoTycoon.ProjectToTest
 
         [FindsBy(How = How.XPath, Using = "//*[@id='modal']/div/div/div[1]/h3")]
         private IWebElement mdlHeader;
+
+        [FindsBy(How = How.XPath, Using = "//tbody[1]")]
+        private IWebElement grid;
         #endregion
 
         #region Methods
         public void CreateNew()
         {
-            //ImplicitlyWait(10);
-            //ExplicitWait(10);
+            ExplicitWait(10, grid);
             this.btnCreate.Click();
         }
         #endregion
@@ -41,6 +43,7 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
+                ExplicitWait(10, lblName);
                 return this.lblName.Text;
             }
         }
@@ -49,6 +52,7 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
+                ExplicitWait(10, pageHeader);
                 return this.pageHeader.Text;
             }
         }
@@ -57,6 +61,7 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
+                ExplicitWait(10, btnCreate);
                 return this.btnCreate.Text;
             }
         }
@@ -65,6 +70,7 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
+                ExplicitWait(10, mdlHeader);
                 return this.mdlHeader.Text;
             }
         }

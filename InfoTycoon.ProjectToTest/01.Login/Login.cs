@@ -33,7 +33,7 @@ namespace InfoTycoon.ProjectToTest
         #region Methods
         public void SingIn(string name, string pass)
         {
-            ImplicitlyWait(10);
+            ExplicitWait(10, btnLogin);
             this.txtUserName.SendKeys(name);
             this.txtPassword.SendKeys(pass);
             this.btnLogin.Click();
@@ -45,6 +45,7 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
+                ExplicitWait(10, errTitle);
                 return this.errTitle.Text;
             }
         }
@@ -52,6 +53,7 @@ namespace InfoTycoon.ProjectToTest
         {
             get
             {
+                ExplicitWait(10, errMsg);
                 return this.errMsg.Text;
             }
         }

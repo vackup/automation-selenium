@@ -43,9 +43,9 @@ namespace InfoTycoon.Fwk.TestAutomation
             Browser.ImplicitlyWait(sec);
         }
 
-        public virtual void ExplicitWait(int sec)
+        public virtual void ExplicitWait(int sec, IWebElement element)
         {
-            Browser.ExplicitWait(sec);
+            Browser.ExplicitWait(sec, element);
         }
     }
 }

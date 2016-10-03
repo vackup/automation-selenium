@@ -4,11 +4,12 @@ using InfoTycoon.ProjectToTest;
 using InfoTycoon.Fwk.TestAutomation;
 using System.Threading;
 using System.Configuration;
+using System.Drawing.Imaging;
 
 namespace InfoTycoon.Test.Example._02.LandingPage
 {
     [TestClass]
-    public class LadingPageTest
+    public class LandingPageTest
     {
         static string name;
         static string pass;
@@ -32,37 +33,41 @@ namespace InfoTycoon.Test.Example._02.LandingPage
         [TestInitialize]
         public void Initialize()
         {
-            Pages.LoginPage.Initializes();
+            Browser.Initializes(true);
         }
 
         [TestMethod]
         public void LandingPageUI()
         {
-            Pages.LoginPage.GoTo();
-            Pages.LoginPage.SingIn(name, pass);
-            Thread.Sleep(5000);
-            Assert.AreEqual(fullname, Pages.LandingPage.LabelUserName);
-            Assert.AreEqual(header, Pages.LandingPage.PageHeader);
-            Assert.AreEqual(createbutton, Pages.LandingPage.CreateButton);
+            var loginPage = Pages.Login;
+            var landingPage = Pages.LandingPage;
+
+            loginPage.GoTo();
+            loginPage.SingIn(name, pass);
+            Assert.AreEqual(fullname, landingPage.LabelUserName);
+            Assert.AreEqual(header, landingPage.PageHeader);
+            Assert.AreEqual(createbutton, landingPage.CreateButton);
+            landingPage.PrintScreen("LandingPageUI Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestMethod]
         public void CreateNewPopUp()
         {
-            Pages.LoginPage.GoTo();
-            Pages.LoginPage.SingIn(name, pass);
-            //Thread.Sleep(5000);
-            Pages.LandingPage.CreateNew();
-            Thread.Sleep(5000);
-            Assert.AreEqual(createmodalheader, Pages.LandingPage.ModalHeader);
+            var loginPage = Pages.Login;
+            var landingPage = Pages.LandingPage;
+
+            loginPage.GoTo();
+            loginPage.SingIn(name, pass);
+            landingPage.CreateNew();
+            Assert.AreEqual(createmodalheader, landingPage.ModalHeader);
+            landingPage.PrintScreen("CreateNewPopUp Test " + dt.ToShortDateString() + " " + dt.Hour.ToString() + " " + dt.Minute.ToString() + " " + dt.Second.ToString(), ImageFormat.Jpeg);
         }
 
         [TestCleanup]
         public void CleanUp()
         {
             //reportHelper.GenerateReport(TestContext);
-            //Browser.Quit();
-            Pages.LoginPage.Quit();
+            Browser.Quit();
         }
     }
 }
